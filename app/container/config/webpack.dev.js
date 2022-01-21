@@ -12,15 +12,12 @@ module.exports = merge(base, {
     },
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-    }),
     new ModuleFederationPlugin({
       name: 'container',
       remotes: {
         marketing: 'marketing@http://localhost:8081/remoteEntry.js',
       },
-      shared: ['react', 'react-dom']
-    })
+      shared: ['react', 'react-dom'],
+    }),
   ],
 });
