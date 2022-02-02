@@ -5,7 +5,7 @@
   "repository": "git@github.com:gtx7970/module-federation.git",
   "license": "MIT",
   "scripts": {
-    "start": "webpack serve"
+    "start": "webpack  serve"
   },
   "devDependencies": {
     "webpack": "^5.4.0",
